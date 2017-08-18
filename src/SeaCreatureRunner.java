@@ -10,8 +10,10 @@ SeaCreature sea2 = new SeaCreature("Squidward");
 sea.eat();
 sea.laugh();
 
-sea1.getName();
-sea2.getName();
+
+System.out.println(sea1.getName());
+
+System.out.println(sea2.getName());sea2.getName();
 
 }
 }
