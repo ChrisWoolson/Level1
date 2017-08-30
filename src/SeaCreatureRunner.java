@@ -12,8 +12,10 @@ sea.laugh();
 
 
 System.out.println(sea1.getName());
-
+sea1.eat();
+sea1.laugh();
 System.out.println(sea2.getName());sea2.getName();
-
+sea2.eat();
+sea2.laugh();
 }
 }
