@@ -79,6 +79,9 @@ frame.add(quizPanel);
 		// 11. Add action listeners to the buttons (2 lines of code)
 	secondButton.addActionListener(this);
 firstButton.addActionListener(this);
+thirdButton.addActionListener(this);
+fourthButton.addActionListener(this);
+fifthButton.addActionListener(this);
 		// 12. Fill in the actionPerformed() method below
 				
 		frame.pack();
@@ -123,27 +126,28 @@ firstButton.addActionListener(this);
 		// If the buttonPressed was the firstButton
 		if(buttonPressed.equals(firstButton)){
 			askQuestion("What is 1+1", "2", 200);
+		
 		}
 			// Call the askQuestion() method
 		else if(buttonPressed.equals(secondButton))
 		{
-			askQuestion("What is 5 - 5", "0", 400);
+			askQuestion("What is 100-25x3+1", "26", 1000);
 		}
 		
 		else if(buttonPressed.equals(thirdButton))
 		{
-			askQuestion("8 X 3", "24", 600);
+			askQuestion("8 X 3", "24", 400);
 		}
 		
 		else if(buttonPressed.equals(fourthButton))
 		{
-			askQuestion("56/8", "7", 800);
+			askQuestion("56/8", "7", 600);
 		}
 		
 		
 		else if(buttonPressed.equals(fifthButton))
 		{
-			askQuestion("40/8 X 3", "15", 1000);
+			askQuestion("40/8 X 3", "15", 800);
 		}
 		// Fill in the askQuestion() method. When you play the game, the score should change.
 		
@@ -167,6 +171,7 @@ firstButton.addActionListener(this);
 			score = score+ prizeMoney;
 		updateScore();
 		JOptionPane.showMessageDialog(null, "Correct");
+		
 		}
 			// Increase the score by the prizeMoney
 			
@@ -179,6 +184,7 @@ firstButton.addActionListener(this);
 			score = score-prizeMoney;
 		JOptionPane.showMessageDialog(null, "Incorrect. The correct answer was"+correctAnswer);
 		updateScore();
+		
 		}
 			// Decrement the score by the prizeMoney
 			
