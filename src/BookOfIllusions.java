@@ -31,18 +31,36 @@ JFrame frame = new JFrame();
 		// 4. find 2 images and save them to your project’s default package
 		
 		// 5. make a variable to hold the location of your image. e.g. "illusion.jpg"
-		string image1 = "";
+		String image1 = "Ocean.jpg";
+		String image2 = "Tiger.jpg";
 		// 6. create a variable of type "JLabel" but don’t initialize it yet
+		JLabel label2 = new JLabel();
 		// 7. use the "loadImage..." methods below to initialize your JLabel
+		loadImageFromComputer(image1);
+		JLabel j1 = new JLabel();
+		JLabel j2 = new JLabel();
+		j1 = loadImageFromComputer(image1);
+		j2 = loadImageFromComputer(image2);
+		
+		
+		loadImageFromComputer(image2);
+		
 		// 8. add your JLabel to the frame
+		frame.add(j1);
+		
 		// 9. call the pack() method on the frame
+		frame.pack();
 		// 10. add a mouse listener to your frame (hint: use *this*)
+		frame.addMouseListener(this);
 	}
 
 	public void mousePressed(MouseEvent e) {
 		// 11. Print "clicked!" to the console when the mouse is pressed
+		System.out.println("Clicked");
 		// 12. remove everything from the frame that was added earlier
+		frame.removeAll();
 		// 13. load a new image like before (this is more than one line of code)
+		
 		// 14. pack the frame
 	}
 

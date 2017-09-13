@@ -66,7 +66,7 @@ else
 {
 	JOptionPane.showMessageDialog(null, "Incorrect");
 }
-
+JOptionPane.showMessageDialog(null, "your score is "+score);
 		// If they got the answer right:
 		// -- Tell them they are correct.
 		// -- Increase the score by 1
@@ -96,6 +96,8 @@ else
 		imageIterator = imageList.iterator();
 		window.setVisible(true);
 		showNextImage();
+	
+	
 	}
 
 	private JLabel loadImage(String fileName) {
