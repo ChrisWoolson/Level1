@@ -1,4 +1,3 @@
-import java.awt.Component;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.net.URL;
@@ -16,7 +15,7 @@ public class BookOfIllusions extends MouseAdapter {
 	 * Here we are instantiating our BookOfIllusions class and calling it’s createBook() method. This is because we want to get out of the
 	 * static main method, so that we can add a click listener to each illusion.
 	 */
-	Component j1;
+	component j1;
 	String j3;
 	public static void main(String[] args) throws Exception {
 		BookOfIllusions illusions = new BookOfIllusions();
