@@ -1,3 +1,4 @@
+import java.awt.Component;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.net.URL;
@@ -15,10 +16,12 @@ public class BookOfIllusions extends MouseAdapter {
 	 * Here we are instantiating our BookOfIllusions class and calling it’s createBook() method. This is because we want to get out of the
 	 * static main method, so that we can add a click listener to each illusion.
 	 */
-
+	Component j1;
+	String j3;
 	public static void main(String[] args) throws Exception {
 		BookOfIllusions illusions = new BookOfIllusions();
 		illusions.createBook();
+	
 	}
 
 	// 1. Make a JFrame variable and initialize it using "new JFrame()"
@@ -32,18 +35,14 @@ JFrame frame = new JFrame();
 		
 		// 5. make a variable to hold the location of your image. e.g. "illusion.jpg"
 		String image1 = "Ocean.jpg";
-		String image2 = "Tiger.jpg";
+	
 		// 6. create a variable of type "JLabel" but don’t initialize it yet
 		JLabel label2 = new JLabel();
 		// 7. use the "loadImage..." methods below to initialize your JLabel
 		loadImageFromComputer(image1);
-		JLabel j1 = new JLabel();
-		JLabel j2 = new JLabel();
-		j1 = loadImageFromComputer(image1);
-		j2 = loadImageFromComputer(image2);
+	
+				j1 = loadImageFromComputer(image1);
 		
-		
-		loadImageFromComputer(image2);
 		
 		// 8. add your JLabel to the frame
 		frame.add(j1);
@@ -58,10 +57,15 @@ JFrame frame = new JFrame();
 		// 11. Print "clicked!" to the console when the mouse is pressed
 		System.out.println("Clicked");
 		// 12. remove everything from the frame that was added earlier
-		frame.removeAll();
+		frame.remove(j1);
 		// 13. load a new image like before (this is more than one line of code)
-		
+		String image2 = "Tiger.jpg";
+		JLabel j2 = new JLabel();
+		j2 = loadImageFromComputer(image2);
+	frame.add(j2);
+	frame.pack();
 		// 14. pack the frame
+	
 	}
 
 	// [OPTIONAL] 15. goad your users with some annoying or witty pop-ups
