@@ -11,6 +11,7 @@
 /Cat.class
 /CatRunner.class
 /ConstructorPractice.class
+/CowTimer.class
 /Cymbal.wav
 /Drum.wav
 /DrumKit.class
@@ -19,12 +20,16 @@
 /HarryPotter.class
 /Houses.class
 /Jeopardy.class
+/Movie.class
+/NetflixQueue.class
+/NetflixRunner.class
 /Ocean.jpg
 /Ocean2.jpg
 /Pencil.class
 /Person.png
 /PhotoQuiz.class
 /Ruler.class
+/RunningRace.class
 /SeaCreature.class
 /SeaCreatureRunner.class
 /SimonSaysRecipe.class
@@ -37,8 +42,4 @@
 /download.png
 /hybrid-exotic.jpg
 /images.png
-/CowTimer.class
-/RunningRace.class
-/Movie.class
-/NetflixQueue.class
-/NetflixRunner.class
+/Person.class
