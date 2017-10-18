@@ -1,14 +1,14 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
-
+// figure out how to draw th buttons again after the user gets it correct
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class WhackAMole implements ActionListener {
 	JButton mole;
-
+int score = 0;
 	public void start(String[] args) {
 		JFrame frame = new JFrame();
 		JPanel panel = new JPanel();
@@ -46,6 +46,8 @@ public class WhackAMole implements ActionListener {
 
 		if (buttonPressed.equals(mole)) {
 System.out.println("Working");
+		score++;
+		
 		}
 		else{
 		speak("dork");
