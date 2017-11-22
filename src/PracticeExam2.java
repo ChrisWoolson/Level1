@@ -46,4 +46,10 @@ numLegs = legs;
 hasFur = fur;
  }
 
+ 
+ 
+ 
+ 
+ 
+ 
 }
