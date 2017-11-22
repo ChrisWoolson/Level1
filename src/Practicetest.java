@@ -5,44 +5,38 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class Practicetest implements ActionListener {
-static JFrame frame;
- 
-	
-	public void test() {
-		frame = new JFrame();
-		JButton button = new JButton();
+public class Practicetest {
+
+	public static void main(String[] args) {
+		Leg l = new Leg();
 		
-		button = new JButton();
-		JPanel panel = new JPanel();
-		frame.setVisible(true);
-		frame.add(panel);
-		panel.add(button);
-		button.addActionListener(this);
-		frame.pack();
-		button.setText("pants");
+		Pants pants = new Pants(l);
 		
-	
+	}
 }
 
-	//public void actionListener() {
+class Pants {
+	Leg leftLeg;
+
+
+Leg getleftleg(){
+	return leftLeg;
+}
+
+void setleftleg(Leg l){
+	leftLeg = l;
+}
+Pants(Leg l){
+	leftLeg = l;
+}
+
+}
+
+class Leg {
+
 	
-	//button.addActionListener(this);
-	
-	//}
 	
 	
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		System.out.println("works");
-	}
-
-
-
-
-
-
-
-
-
+	
+	
 }
