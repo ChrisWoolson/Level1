@@ -22,6 +22,9 @@ public class PracticeExamtwo implements ActionListener, MouseMotionListener{
 System.out.println(average(5, 7));
 	System.out.println(squareNum(2));
 	annoy("hi");
+	Smurf smurf = new Smurf(true);
+	smurf.setName("smurfy");
+	System.out.println(smurf.name);
 	}
 
 	public void actionPerformed(ActionEvent e) {
@@ -72,4 +75,17 @@ static int average(int one, int two) {
 	
 	
 	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
 }
+
