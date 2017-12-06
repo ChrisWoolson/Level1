@@ -11,6 +11,8 @@
 /Book1.jpg
 /Book2.jpg
 /BookOfIllusions.class
+/Building.class
+/Bulldozer.class
 /ButtonListeners.class
 /Cat.class
 /CatRunner.class
@@ -31,6 +33,7 @@
 /Houses.class
 /Jeopardy.class
 /Leg.class
+/Level1review.class
 /Magic8Ball.class
 /Minion.class
 /MinionTest.class
@@ -38,6 +41,7 @@
 /Movie.class
 /NetflixQueue.class
 /NetflixRunner.class
+/Ninja.class
 /Ocean.jpg
 /Ocean2.jpg
 /Oopsy Daisy Fart-SoundBible.com-8405343.wav
@@ -56,6 +60,7 @@
 /SeaCreature.class
 /SeaCreatureRunner.class
 /SimonSaysRecipe.class
+/Smurf.class
 /Squeeze.wav
 /Student.class
 /Supply.class
@@ -74,9 +79,10 @@
 /hybrid-exotic.jpg
 /images.png
 /practiceExam1.class
-/Smurf.class
-/Mistakes.class
-/Level1review.class
-/Building.class
-/Bulldozer.class
-/Ninja.class
+/SimpleCalculator.class
+/SimpleCalculatorRunner.class
+/SimpleCalculator$AdditionListener.class
+/SimpleCalculator$AddListener.class
+/SimpleCalculator$DivListener.class
+/SimpleCalculator$MultListener.class
+/SimpleCalculator$SubListener.class
