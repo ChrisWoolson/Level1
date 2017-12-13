@@ -11,13 +11,18 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class SimpleCalculator {
-
+	
+	
+	
 	JFrame frame = new JFrame();
 	JPanel mainPanel = new JPanel();
 	JPanel inputPanel = new JPanel();
 	JPanel buttonPanel = new JPanel();
 	JPanel answerPanel = new JPanel();
 	
+	
+	JButton square = new JButton();
+	JButton clear = new JButton();
 	JButton add = new JButton();
 	JButton mult = new JButton();
 	JButton div = new JButton();
@@ -37,6 +42,8 @@ public class SimpleCalculator {
 		buttonPanel.add(sub);
 		buttonPanel.add(add);
 		answerPanel.add(answer);
+		answerPanel.add(clear);
+		buttonPanel.add(square);
 		
 		mainPanel.add(inputPanel);
 		mainPanel.add(buttonPanel);
@@ -49,7 +56,9 @@ public class SimpleCalculator {
 		sub.setText("sub");
 		div.setText("div");
 		add.setText("add");
+		clear.setText("clear");
 		frame.setTitle("Simple Calculator");
+		square.setText("square");
 		//formatting
 		answer.setFont(new Font("", Font.BOLD, 40));
 		
@@ -65,18 +74,29 @@ public class SimpleCalculator {
 		sub.addActionListener(new SubListener());
 		mult.addActionListener(new MultListener());
 		div.addActionListener(new DivListener());
-
+clear.addActionListener(new ClearListener());
+square.addActionListener(new SquareListener());
 		frame.pack();
 
+		
+		
 	}
 
+	static int getInt (JTextField textField) {
+		
+		
+		
+		return Integer.parseInt(textField.getText());
+		
+		
+	}
+	
 	public class AddListener implements ActionListener {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			String variableAText = variableA.getText();
-			String variableBText = variableB.getText();
-			int solution = Integer.parseInt(variableAText) + Integer.parseInt(variableBText);
+			
+			int solution = getInt(variableA) + getInt(variableB);
 			answer.setText(Integer.toString(solution));
 			frame.pack();
 		}
@@ -87,9 +107,8 @@ public class SimpleCalculator {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			String variableAText = variableA.getText();
-			String variableBText = variableB.getText();
-			int solution = Integer.parseInt(variableAText) * Integer.parseInt(variableBText);
+			
+			int solution = 	 getInt(variableA) * getInt(variableB);
 			answer.setText(Integer.toString(solution));
 			frame.pack();
 		}
@@ -100,9 +119,7 @@ public class SimpleCalculator {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			String variableAText = variableA.getText();
-			String variableBText = variableB.getText();
-			int solution = Integer.parseInt(variableAText) - Integer.parseInt(variableBText);
+			int solution = getInt(variableA) - getInt(variableB);
 			answer.setText(Integer.toString(solution));
 			frame.pack();
 		}
@@ -113,13 +130,34 @@ public class SimpleCalculator {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			String variableAText = variableA.getText();
-			String variableBText = variableB.getText();
-			int solution = Integer.parseInt(variableAText) / Integer.parseInt(variableBText);
+			int solution = getInt(variableA) / getInt(variableB);
 			answer.setText(Integer.toString(solution));
 			frame.pack();
 		}
 
 	}
 
+	public class ClearListener implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			answer.setText("0");
+			variableA.setText("");
+			variableB.setText("");
+		
+		}
+		
+	}
+	
+	public class SquareListener implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			int solution = getInt(variableA) * getInt(variableA);
+			answer.setText(Integer.toString(solution));
+		}
+		
+	}
+	
+	
 }

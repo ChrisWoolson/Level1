@@ -60,6 +60,12 @@
 /SeaCreature.class
 /SeaCreatureRunner.class
 /SimonSaysRecipe.class
+/SimpleCalculator$AddListener.class
+/SimpleCalculator$DivListener.class
+/SimpleCalculator$MultListener.class
+/SimpleCalculator$SubListener.class
+/SimpleCalculator.class
+/SimpleCalculatorRunner.class
 /Smurf.class
 /Squeeze.wav
 /Student.class
@@ -79,10 +85,5 @@
 /hybrid-exotic.jpg
 /images.png
 /practiceExam1.class
-/SimpleCalculator.class
-/SimpleCalculatorRunner.class
-/SimpleCalculator$AdditionListener.class
-/SimpleCalculator$AddListener.class
-/SimpleCalculator$DivListener.class
-/SimpleCalculator$MultListener.class
-/SimpleCalculator$SubListener.class
+/SimpleCalculator$ClearListener.class
+/SimpleCalculator$SquareListener.class
