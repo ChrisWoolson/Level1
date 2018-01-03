@@ -3,7 +3,7 @@ public class PracticeExam2 {
 	
 	public static void main(String[] args) {
 		Student s = new Student();
-		Animal a = new Animal(true, 5);
+		Animal a = new Animal(false, 0);
 	
 		System.out.println(a.numLegs);
 	}

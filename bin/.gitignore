@@ -1,4 +1,5 @@
 /10809.jpg
+/Animal.class
 /BabyRunner.class
 /Backpack.class
 /BakingCookies.class
@@ -10,6 +11,8 @@
 /Book1.jpg
 /Book2.jpg
 /BookOfIllusions.class
+/Building.class
+/Bulldozer.class
 /ButtonListeners.class
 /Cat.class
 /CatRunner.class
@@ -27,29 +30,6 @@
 /FortuneTeller.class
 /FortuneTeller.jpeg
 /HarryPotter.class
-/MixingBowl.class
-/Ocean.jpg
-/Ocean2.jpg
-/Oopsy Daisy Fart-SoundBible.com-8405343.wav
-/Oven.class
-/Pencil.class
-/Person.png
-/Quick Fart-SoundBible.com-655578646.wav
-/Ruler.class
-/Squeeze.wav
-/Supply.class
-/Textbook.class
-/Tiger.jpg
-/Tiger2.jpg
-/Wont Start Fart-SoundBible.com-1643093672.wav
-/bass.mp3
-/download-1.jpg
-/download.png
-/hybrid-exotic.jpg
-/images.png
-/Animal.class
-/Building.class
-/Bulldozer.class
 /Houses.class
 /Jeopardy.class
 /Leg.class
@@ -57,16 +37,28 @@
 /Magic8Ball.class
 /Minion.class
 /MinionTest.class
+/MixingBowl.class
 /Movie.class
 /NetflixQueue.class
 /NetflixRunner.class
 /Ninja.class
+/Ocean.jpg
+/Ocean2.jpg
+/Oopsy Daisy Fart-SoundBible.com-8405343.wav
+/Oven.class
 /Pants.class
+/Pencil.class
+/Person.png
 /PhotoQuiz.class
 /PracticeExam2.class
 /PracticeExamtwo.class
 /Practicetest.class
 /Practicetestrunner.class
+/Quick Fart-SoundBible.com-655578646.wav
+/Riddle$check.class
+/Riddle.class
+/RiddleRunner.class
+/Ruler.class
 /RunningRace.class
 /SeaCreature.class
 /SeaCreatureRunner.class
@@ -80,14 +72,25 @@
 /SimpleCalculator.class
 /SimpleCalculatorRunner.class
 /Smurf.class
+/Squeeze.wav
 /Student.class
+/Supply.class
+/Textbook.class
+/Tiger.jpg
+/Tiger2.jpg
 /TootMachine$Buttonlistener.class
 /TootMachine.class
 /TootMachineRunner.class
 /WhackAMole.class
 /WhackAMoleRunner.class
-/practiceExam1.class
+/Wont Start Fart-SoundBible.com-1643093672.wav
+/bass.mp3
+/download-1.jpg
+/download.png
 /floatPractice.class
-/Riddle.class
-/RiddleRunner.class
-/Riddle$check.class
+/hybrid-exotic.jpg
+/images.png
+/practiceExam1.class
+/prac.class
+/pracrunner.class
+/duelingButtons.class
